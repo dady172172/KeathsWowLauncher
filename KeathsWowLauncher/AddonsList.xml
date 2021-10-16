@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<addonlist>
+  <!-- Templete
+  <addon>
+    <name>name</name>
+    <downloadname>nameforlink</downloadname>
+	<tooltip>tip</tooltip>
+  </addon> -->
+  <addon>
+    <name>Recount</name>
+    <downloadname>https://www.curseforge.com/wow/addons/recount/download/808972</downloadname>
+	<tooltip>allows you to view many statistics about your Party / Raid Group such as Overall Healing, Damage and DPS in a detailed fashion.</tooltip>
+  </addon>
+  <addon>
+    <name>GearScore</name>
+    <downloadname>https://legacy-wow.com/uploads/addons/wotlk/GearScore.zip</downloadname>
+    <tooltip>Addon that allows you to see Gearscore</tooltip>
+  </addon>
+  <addon>
+    <name>AtlasLoot Enhanced</name>
+    <downloadname>https://www.curseforge.com/wow/addons/atlasloot-enhanced/download/445202</downloadname>
+    <tooltip>A UI mod, allowing for loot tables of bosses to be browsed whenever needed within the game.</tooltip>
+  </addon>
+  <addon>
+    <name>Deadly Boss Mods</name>
+    <downloadname>https://www.curseforge.com/wow/addons/deadly-boss-mods/download/447605</downloadname>
+    <tooltip>useful in a way that it alerts you on when a Boss begins to cast certain spells or use certain skills, so that you know when to move, counter, stop damage, run away, etc.</tooltip>
+  </addon>
+  <addon>
+    <name>Bagnon</name>
+    <downloadname>https://www.curseforge.com/wow/addons/bagnon/download/441052</downloadname>
+    <tooltip>Bagnon merges all of your bags into three windows: inventory, bank and guild bank.</tooltip>
+  </addon>
+  <addon>
+    <name>Quest Helper</name>
+    <downloadname>https://www.curseforge.com/wow/addons/quest-helper/download/457184</downloadname>
+    <tooltip>Questhelper tells you how to finish your quests in the easiest, fastest manner. It includes a database of quests, monsters, and items, telling you the exact location of that dang Perfect Satyr Horn you can't find. It also computes the fastest path to complete all your quests - and gain experience - as quickly as possible.</tooltip>
+  </addon>
+  <addon>
+    <name>OmniCC</name>
+    <downloadname>https://www.curseforge.com/wow/addons/omni-cc/download/454434</downloadname>
+    <tooltip>An addon that adds text to items/spells/abilities that are on cooldown to indicate when they’ll be ready for use.</tooltip>
+  </addon>
+  <addon>
+    <name>Gatherer</name>
+    <downloadname>https://www.curseforge.com/wow/addons/gatherer/download/467020</downloadname>
+    <tooltip>An addon for herbalists, miners and treasure hunters. It's main purpose is to track the closest plants, deposits and treasure locations on your minimap.</tooltip>
+  </addon>
+  <addon>
+    <name>Bartender4</name>
+    <downloadname>https://www.curseforge.com/wow/addons/bartender4/download/439962</downloadname>
+    <tooltip>A full Action Bar replacement mod. It provides you with all the features needed to fully customization most aspects of your action and related bars.</tooltip>
+  </addon>
+  <addon>
+    <name>Quartz</name>
+    <downloadname>https://www.curseforge.com/wow/addons/quartz/download/441489</downloadname>
+    <tooltip>A modular approach to a casting bar.</tooltip>
+  </addon>
+  <addon>
+    <name>Atlas</name>
+    <downloadname>https://legacy-wow.com/uploads/addons/wotlk/Atlas-3.3.5.zip</downloadname>
+    <tooltip>* It's the images that come with Atlas that make it worthwhile: a map for every instance in the game.</tooltip>
+  </addon>
+  <addon>
+    <name>Auctioneer</name>
+    <downloadname>https://www.curseforge.com/wow/addons/auctioneer/download/427823</downloadname>
+    <tooltip>suite provides you with the tools and data necessary to make those difficult auctioning decisions with ease.</tooltip>
+  </addon>
+  <addon>
+    <name>MikScrollingBattleText</name>
+    <downloadname>https://www.curseforge.com/wow/addons/mik-scrolling-battle-text/download/422879</downloadname>
+    <tooltip>is designed to be an extremely lightweight, efficient, and highly configurable mod that makes it easier to see combat information by scrolling the information on the screen in separate.</tooltip>
+  </addon>
+  <addon>
+    <name>Tidy Plates</name>
+    <downloadname>https://www.curseforge.com/wow/addons/tidy-plates/download/455039</downloadname>
+    <tooltip>Tidy Plates enhances World of Warcraft's nameplates (ie. floating health bars) and provides a built-in API which can be used to create your own design. This download comes with two Theme packages (Neon and Grey).</tooltip>
+  </addon>
+  <addon>
+    <name>XPerl UnitFrames</name>
+    <downloadname>https://www.curseforge.com/wow/addons/xperl/download/825399</downloadname>
+    <tooltip>Much enchanced from Nymbia's Perl UnitFrames, and a complete replacement for Blizzard's default unit frames, including raid frames and raid tools.</tooltip>
+  </addon>
+  <addon>
+    <name>Omen Threat Meter</name>
+    <downloadname>https://www.curseforge.com/wow/addons/omen-threat-meter/download/404746</downloadname>
+    <tooltip>is good for Tanks and High DPS / Healing players to show what percentage every player's threat is at according to what Mob is selected.</tooltip>
+  </addon>
+  <addon>
+    <name>Auctionator</name>
+    <downloadname>https://www.curseforge.com/wow/addons/auctionator/download/426882</downloadname>
+    <tooltip>makes the auction house easier to use.</tooltip>
+  </addon>
+  <addon>
+    <name>Postal</name>
+    <downloadname>https://www.curseforge.com/wow/addons/postal/download/454623</downloadname>
+    <tooltip>offers enhanced mailbox support.</tooltip>
+  </addon>
+  <addon>
+    <name>Carbonite</name>
+    <downloadname>https://legacy-wow.com/uploads/addons/wotlk/Carbonite-3.340.zip</downloadname>
+    <tooltip>A multi feature addon developed by game industry veterans to improve and enhance the game playing experience of World of Warcraft.</tooltip>
+  </addon>
+  <addon>
+    <name>Grid</name>
+    <downloadname>https://legacy-wow.com/uploads/addons/wotlk/Grid-3.3.5.zip</downloadname>
+    <tooltip>A party/raid unit frame addon. A compact grid of units lets you select a group member quickly, while retaining a good overview of the whole group.</tooltip>
+  </addon>
+  <addon>
+    <name>Healbot Continued</name>
+    <downloadname>https://www.curseforge.com/wow/addons/heal-bot-continued/download/456315</downloadname>
+    <tooltip>A massively supportive addon for healers, as it can do numerous amounts of helpful little tricks.</tooltip>
+  </addon>
+  <addon>
+    <name>MoveAnything</name>
+    <downloadname>https://www.curseforge.com/wow/addons/move-anything/download/458132</downloadname>
+    <tooltip>Enables you to move, scale, hide and adjust transparency of just about any screen element.</tooltip>
+  </addon>
+  <addon>
+    <name>Crap Away</name>
+    <downloadname>https://www.curseforge.com/wow/addons/crapaway/download/426452</downloadname>
+	<tooltip>Sells all useless gray items in your bags whenever you visit a merchant.</tooltip>
+  </addon>
+  <addon>
+    <name>Skada Damage Meter</name>
+    <downloadname>https://www.curseforge.com/wow/addons/skada/download/458800</downloadname>
+	<tooltip>A modular damage meter with various viewing modes. It is inspired mainly by Assessment, but also by Recount.</tooltip>
+  </addon>
+  <addon>
+    <name>Galdius</name>
+    <downloadname>https://legacy-wow.com/uploads/addons/wotlk/Gladius-3.3.5.zip</downloadname>
+	<tooltip>adds enemy unit frames to arenas for easier targeting and focusing. It is highly configurable and you can disable most features of this addon.</tooltip>
+  </addon>
+  <addon>
+    <name>NPCScan</name>
+    <downloadname>https://www.curseforge.com/wow/addons/npcscan/download/441050</downloadname>
+	<tooltip>tracks seldom-seen rare mobs by proximity alone.</tooltip>
+  </addon>
+  <addon>
+    <name>NeedToKnow</name>
+    <downloadname>https://www.curseforge.com/wow/addons/need-to-know/download/450521</downloadname>
+	<tooltip>lets you monitor specific buffs, debuffs, cooldowns, and totems as timer bars that always appear in a consistent place on your screen.</tooltip>
+  </addon>
+  <addon>
+    <name>SexyMap</name>
+    <downloadname>https://www.curseforge.com/wow/addons/sexymap/download/422702</downloadname>
+	<tooltip>Make your minimap ubersexah! SexyMap is a minimap awesomification mod.</tooltip>
+  </addon>
+  <addon>
+    <name>Dr.Damage</name>
+    <downloadname>https://www.curseforge.com/wow/addons/dr-damage/download/480655</downloadname>
+	<tooltip>displays the calculated damage or healing of abilities with talents, gear and buffs included on your actionbar buttons. The addon also adds various statistics to the tooltips in your spellbook and on the actionbar.</tooltip>
+  </addon>
+  <addon>
+    <name>Addon Control Panel</name>
+    <downloadname>https://www.curseforge.com/wow/addons/acp/download/471111</downloadname>
+	<tooltip>It allows you to manage your addons in game, with an interface which looks similar to the blizzard addon manager.</tooltip>
+  </addon>
+  <addon>
+    <name>LoseControl</name>
+    <downloadname>https://www.curseforge.com/wow/addons/losecontrol/download/417954</downloadname>
+	<tooltip>makes it easy to see the duration of crowd control spells by displaying them in a dedicated icon onscreen.</tooltip>
+  </addon>
+  <addon>
+    <name>Pally Power</name>
+    <downloadname>https://legacy-wow.com/uploads/addons/pally-power-wotlk/PallyPower.zip</downloadname>
+	<tooltip>Shows paladin's which buffs to use so they don't overlap.</tooltip>
+  </addon>
+  <addon>
+    <name>Titan Panel</name>
+    <downloadname>https://www.curseforge.com/wow/addons/titan-panel/download/439155</downloadname>
+	<tooltip>adds one or two information bars on the top and/or bottom of the screen and allows a framework for extensive plugin support.</tooltip>
+  </addon>
+  <addon>
+    <name>Event Alert</name>
+    <downloadname>https://www.curseforge.com/wow/addons/event-alert/download/456081</downloadname>
+	<tooltip>Notify's you in the middle of your screen with an icon, name of the spell that has procced, the time left on the proc and will make a subtle sound.</tooltip>
+  </addon>
+  <addon>
+    <name>InterruptBar</name>
+    <downloadname>https://www.curseforge.com/wow/addons/interruptbar/download/515084</downloadname>
+	<tooltip>A basic mod that tracks enemy interrupt abilities on a neat little bar.</tooltip>
+  </addon>
+  <addon>
+    <name>Auto Repair</name>
+    <downloadname>https://www.curseforge.com/wow/addons/autorepair/download/432481</downloadname>
+	<tooltip>automaticaly repairs all your items when you visit a vendor with repair ability.</tooltip>
+  </addon>
+  <addon>
+    <name>Mapster</name>
+    <downloadname>https://www.curseforge.com/wow/addons/mapster/download/436697</downloadname>
+	<tooltip>A very simple world map enhacement addon, which was designed to work in conjunction with all other map addons out there.</tooltip>
+  </addon>
+  <addon>
+    <name>Shadowed Unit Frames</name>
+    <downloadname>https://www.curseforge.com/wow/addons/shadowed-unit-frames/download/435570</downloadname>
+	<tooltip>focuses on a simple configuration while maintaining the flexibility that most users will care about, preventing unnecessary bloating of the addon that sacrifices performance.</tooltip>
+  </addon>
+  <addon>
+    <name>Cooldown count</name>
+    <downloadname>https://www.curseforge.com/wow/addons/cooldowncount/download/458130</downloadname>
+	<tooltip>A viable replacement for Cooldowns addon.</tooltip>
+  </addon>
+  <addon>
+    <name>GTFO</name>
+    <downloadname>https://www.curseforge.com/wow/addons/gtfo/download/457117</downloadname>
+	<tooltip>provides an audible alert when you're standing in something you're not supposed to be standing in.</tooltip>
+  </addon>
+  <addon>
+    <name>Dominos</name>
+    <downloadname>https://www.curseforge.com/wow/addons/dominos/download/441116</downloadname>
+	<tooltip>A custom actionbar mod. It has a button on the minimap ring that once you left click it, it lets you move the actionbars around with the mouse, and right clicks on bars changes their size, opacity etc, very nice and much better than bartender.</tooltip>
+  </addon>
+  <addon>
+    <name>Prat</name>
+    <downloadname>https://www.curseforge.com/wow/addons/prat-3-0/download/471485</downloadname>
+	<tooltip>is made up of 30+ smaller "modules" which each provide additional functionality, and can be enabled or disabled individually.</tooltip>
+  </addon>
+  <addon>
+    <name>Gathermate2</name>
+    <downloadname>https://www.curseforge.com/wow/addons/gathermate2/download/450050</downloadname>
+	<tooltip>Collects Herbs, Mines, Gas Clouds and Fishing locations and adds them to the worldmap and minimap.</tooltip>
+  </addon>
+  <addon>
+    <name>Rating Buster</name>
+    <downloadname>https://www.curseforge.com/wow/addons/rating-buster/download/467684</downloadname>
+	<tooltip>The design aim of RatingBuster is to provide detailed, meaningful and customizable information about items so you can easily decide for yourself which item is better.</tooltip>
+  </addon>
+  <addon>
+    <name>Decursive</name>
+    <downloadname>https://www.curseforge.com/wow/addons/decursive/download/450122</downloadname>
+	<tooltip>Decursive supports all classes with cleansing abilities and configures itself automatically, it works straight out of the box, no configuration is required.</tooltip>
+  </addon>
+  <addon>
+    <name>Outfitter</name>
+    <downloadname>https://legacy-wow.com/uploads/addons/wotlk/Outfitter-3.3.5.zip</downloadname>
+	<tooltip>fast access to multiple outfits to optimize your abilities in PvE and PvP.</tooltip>
+  </addon>
+  <addon>
+    <name>Spy</name>
+    <downloadname>https://www.curseforge.com/wow/addons/spy/download/442604</downloadname>
+	<tooltip>scans for enemy players and announces their presence when they are detected.</tooltip>
+  </addon>
+  <addon>
+    <name>Chatter</name>
+    <downloadname>https://www.curseforge.com/wow/addons/chatter/download/443809</downloadname>
+	<tooltip>A comprehensive, lightweight, mega-configurable chat enhancement addon. It supports a whole bunch of stuff.</tooltip>
+  </addon>
+  <addon>
+    <name>TomTom</name>
+    <downloadname>https://www.curseforge.com/wow/addons/tomtom/download/439781</downloadname>
+	<tooltip>is your personal navigation assistant.</tooltip>
+  </addon>
+  <addon>
+    <name>NugComboBar</name>
+    <downloadname>https://www.curseforge.com/wow/addons/nugie-combo-bar/download/301677</downloadname>
+	<tooltip>Class resource tracking.</tooltip>
+  </addon>
+  <addon>
+    <name>XLoot</name>
+    <downloadname>https://www.curseforge.com/wow/addons/xloot/download/403604</downloadname>
+	<tooltip>Providing a large array of options to change how loot is presented, as well as allowing you to use Masque or ButtonFacade Skins, XLoot's job is to make looting more functional while still having a better form.</tooltip>
+  </addon>
+  <addon>
+    <name>OneBag3</name>
+    <downloadname>https://www.curseforge.com/wow/addons/onebag3/download/455406</downloadname>
+	<tooltip>The latest in a long line of bag replacements for the default game bags that will combine all of your bags into one frame.</tooltip>
+  </addon>
+  <addon>
+    <name>IceHUD</name>
+    <downloadname>https://www.curseforge.com/wow/addons/ice-hud/download/458483</downloadname>
+	<tooltip>Player and target health and mana bars, casting and mirror bars, pet health and mana bars, druid mana bar in forms, extensive target info, ToT display, and much more.</tooltip>
+  </addon>
+  <addon>
+    <name>Sell O Matic</name>
+    <downloadname>https://legacy-wow/uploads/addons/wotlk/SellOmatic-3.3.5.zip</downloadname>
+	<tooltip>As simple as going near a merchant and opening their trade window, then you can click on the sell button (money icon). By default it will sell all gray items and use no sell or save list.</tooltip>
+  </addon>
+  <addon>
+    <name>Fishing Buddy</name>
+    <downloadname>https://www.curseforge.com/wow/addons/fishingbuddy/download/442409</downloadname>
+	<tooltip>keeps track of the fish you catch and helps manage your fishing gear.</tooltip>
+  </addon>
+  <addon>
+    <name>Ackis Recipe</name>
+    <downloadname>https://www.curseforge.com/wow/addons/arl/download/458020</downloadname>
+	<tooltip>Ackis Recipe list is an addon which will scan your trade skills and provide information on how to obtain recipes.</tooltip>
+  </addon>
+  <addon>
+    <name>Clique</name>
+    <downloadname>https://www.curseforge.com/wow/addons/clique/download/466948</downloadname>
+	<tooltip>A simple addon that enables powerful click-casting and hover-casting on your unit frames and in the 3D game world.</tooltip>
+  </addon>
+  <addon>
+    <name>SilverDragon</name>
+    <downloadname>https://www.curseforge.com/wow/addons/silver-dragon/download/457842</downloadname>
+	<tooltip>Tracks rares. It will try everything possible to notice them and tell you about them.</tooltip>
+  </addon>
+  <addon>
+    <name>GearScore Lite</name>
+    <downloadname>https://www.curseforge.com/wow/addons/gearscorelite/download/432528</downloadname>
+	<tooltip>GearScoreLite is a trimmed down version of GearScore.</tooltip>
+  </addon>
+  <addon>
+    <name>Debuff Filter</name>
+    <downloadname>https://www.curseforge.com/wow/addons/debuff-filter/download/455011</downloadname>
+	<tooltip>filters out the debuffs and buffs that you don't care about, and places them anywhere on screen.</tooltip>
+  </addon>
+  <addon>
+    <name>Wow Instant Messenger</name>
+    <downloadname>https://www.curseforge.com/wow/addons/wim-3/download/439176</downloadname>
+	<tooltip>(WoW Instant Messenger) helps you to manage your whispers by making them into a classic instant messenger interface such as AIM, Yahoo and MSN.</tooltip>
+  </addon>
+  <addon>
+    <name>Mage Nuggets</name>
+    <downloadname>https://www.curseforge.com/wow/addons/mage-nuggets/download/438172</downloadname>
+	<tooltip>A utility with many useful nuggets to make the lives of mages easier.</tooltip>
+  </addon>
+  <addon>
+    <name>Raid Roll</name>
+    <downloadname>https://www.curseforge.com/wow/addons/raid-roll/download/450070</downloadname>
+	<tooltip>can be used to perform a raid roll. A raid roll lists all players with an ID beside their name. Then it performs a roll and announces who the winner is (based on the ID)</tooltip>
+  </addon>
+  <addon>
+    <name>Scrap</name>
+    <downloadname>https://www.curseforge.com/wow/addons/scrap/download/429431</downloadname>
+	<tooltip>sells all your junk when you visit a merchant.</tooltip>
+  </addon>
+  <addon>
+    <name>MapCoord</name>
+    <downloadname>https://www.curseforge.com/wow/addons/map-coord/download/76814</downloadname>
+	<tooltip>shows the cursor and player coordinates on the worldmap.</tooltip>
+  </addon>
+  <addon>
+    <name>Healers Have To Die</name>
+    <downloadname>https://www.curseforge.com/wow/addons/h-h-t-d/download/456322</downloadname>
+	<tooltip>When a healer is identified it will be marked with a healer symbol + sign above his/her nameplate.Really handy in BG's or arenas.</tooltip>
+  </addon>
+  <addon>
+    <name>Healium</name>
+    <downloadname>https://www.curseforge.com/wow/addons/healium/download/457297</downloadname>
+	<tooltip>An addon who's main goal is to simplify healing of party or raid members.</tooltip>
+  </addon>
+  <addon>
+    <name>Arkinventory</name>
+    <downloadname>https://www.curseforge.com/wow/addons/ark-inventory/download/458795</downloadname>
+	<tooltip>helps you to easily archive items in your bags.</tooltip>
+  </addon>
+  <addon>
+    <name>Cromulent</name>
+    <downloadname>https://www.curseforge.com/wow/addons/cromulent/download/460479</downloadname>
+	<tooltip>Shows Zone Info on the World Map in a perfectly cromulent fashion. This is just a Cartographer ZoneInfo stripped down into its own separate addon.</tooltip>
+  </addon>
+  <addon>
+    <name>Peggle</name>
+    <downloadname>https://legacy-wow.com/uploads/addons/wotlk/Peggle.zip</downloadname>
+	<tooltip>Play Peggle within World of Warcraft.</tooltip>
+  </addon>
+  <addon>
+    <name>DoTimer</name>
+    <downloadname>https://www.curseforge.com/wow/addons/do-timer/download/412921</downloadname>
+	<tooltip>A comprehensive suite for managing various things that need timing.</tooltip>
+  </addon>
+  <addon>
+    <name>Afflicted 3</name>
+    <downloadname>https://www.curseforge.com/wow/addons/afflicted3/download/413844</downloadname>
+	<tooltip>An enemy spell timer mod for PvP (mainly arenas). This is for people who just want useful information.</tooltip>
+  </addon>
+  <addon>
+    <name>Altoholic</name>
+    <downloadname>https://legacy-wow.com/uploads/addons/wotlk/Altoholic-3.3.5.zip</downloadname>
+	<tooltip>The main feature of the addon is the search functionality, which allows users to search their alts' bags or loot tables in an Auction-House-like frame.</tooltip>
+  </addon>
+  <addon>
+    <name>TipTac</name>
+    <downloadname>https://www.curseforge.com/wow/addons/tip-tac/download/427096</downloadname>
+	<tooltip>A tooltip enchancement addon, it allows you to configure various aspects of the tooltip, such as moving where it's shown, the font, the scale of tips, plus a lot more.</tooltip>
+  </addon>
+  <addon>
+    <name>Overachiever</name>
+    <downloadname>https://www.curseforge.com/wow/addons/overachiever/download/443622</downloadname>
+	<tooltip>Tools and tweaks to make the lives of players seeking Achievements a little bit easier.</tooltip>
+  </addon>
+  <addon>
+    <name>SpartanUI</name>
+    <downloadname>https://www.curseforge.com/wow/addons/spartan-ui/download/399685</downloadname>
+	<tooltip>Is designed to free your screen by moving a majority of the interface elements to the bottom.</tooltip>
+  </addon>
+  <addon>
+    <name>Easyloot</name>
+    <downloadname>https://www.curseforge.com/wow/addons/easyloot/download/453103</downloadname>
+	<tooltip>It automatically loots using a user defined filter so that only items with a quality/rarity above a certain level gets looted automatically.</tooltip>
+  </addon>
+  <addon>
+    <name>TotemTimers</name>
+    <downloadname>https://www.curseforge.com/wow/addons/totemtimers/download/454307</downloadname>
+	<tooltip>aims to help managing totems, shields, and weapon buffs, showing additional info about active totems (range, cooldowns) and provides additional totem sets.</tooltip>
+  </addon>
+  <addon>
+    <name>OPie</name>
+    <downloadname>https://legacy-wow.com/uploads/addons/wotlk/OPie-3.3.5.zip</downloadname>
+	<tooltip>A radial action-binding addon: it lets you group actions into rings which appear when you hold down a keyboard or mouse binding.</tooltip>
+  </addon>
+  <addon>
+    <name>Minimap Button Frame</name>
+    <downloadname>https://www.curseforge.com/wow/addons/minimap-button-frame/download/453688</downloadname>
+	<tooltip>This little addon will gather up all of your addon minimap buttons and put them into a movable frame.</tooltip>
+  </addon>
+  <addon>
+    <name>Classloot</name>
+    <downloadname>https://www.curseforge.com/wow/addons/classloot/download/439152</downloadname>
+	<tooltip>This addon is an in-game representation of Kaliban's Class Loot Lists. Kaliban's Class Loot List provides ratings for all raid loot with respect to it's suitability for different class/spec combinations.</tooltip>
+  </addon>
+  <addon>
+    <name>Error Sounds Be Gone!</name>
+    <downloadname>https://legacy-wow.com/uploads/addons/wotlk/ESBG-4.3.4.zip</downloadname>
+	<tooltip>Gets rid of all those annoying pesky GCD (Global cooldown) error sounds (woosh, clicks, bangs, and fizzle).</tooltip>
+  </addon>
+  <addon>
+    <name>Genie</name>
+    <downloadname>https://www.curseforge.com/wow/addons/genie/download/459365</downloadname>
+	<tooltip>A full bag, bank and guildbank sorting addon.</tooltip>
+  </addon>
+  <addon>
+    <name>SimpleUnitFrames</name>
+    <downloadname>https://www.curseforge.com/wow/addons/simple-unit-frames/download/436270</downloadname>
+	<tooltip>An extension to the default WoW Unit Frames. Rather than a complete unitframe replacement, thAddon adds further information and features to the existing frames and allows a greater degree of customization to enhance their usability.</tooltip>
+  </addon>
+  <addon>
+    <name>ForteXorcist</name>
+    <downloadname>https://www.curseforge.com/wow/addons/fortexorcist/download/456880</downloadname>
+	<tooltip>A powerful AddOn for Raiders. Mainly targeted at Warlocks.</tooltip>
+  </addon>
+  <addon>
+    <name>BadKitty</name>
+    <downloadname>https://www.curseforge.com/wow/addons/badkitty/download/432074</downloadname>
+	<tooltip>A debuff tracker for Feral Druids. Originally designed to accurately track Mangle's remaining time regardless of how many Ferals or Arms Warriors were in the raid.</tooltip>
+  </addon>
+  <addon>
+    <name>BindPad</name>
+    <downloadname>https://www.curseforge.com/wow/addons/bind-pad/download/410752</downloadname>
+	<tooltip>an addon to make KeyBindings for spells, items, and macros,You no longer need actionbar slots just to make Key bindings for your macros etc, provides many icon slots in its frame. *You can drag and drop anything into one of these slots, and click the slot to set KeyBindings.</tooltip>
+  </addon>
+  <addon>
+    <name>DPSMate</name>
+    <downloadname>https://github.com/Geigerkind/DPSMateWOTLK/archive/refs/heads/master.zip</downloadname>
+	<tooltip>DPSMate is not only a meter which shows numbers of the raid, such as damage done, damage taken, dispells etc., it is moreover an analyzing tool to review the raid or the previous fight as accurately as possible. git repository: https://github.com/Geigerkind/DPSMateWOTLK</tooltip>
+  </addon>
+  <addon>
+    <name>Capping</name>
+    <downloadname>https://www.curseforge.com/wow/addons/capping-bg-timers/download/420056</downloadname>
+	<tooltip>Capping is just another battleground timer mod with some extras.</tooltip>
+  </addon>
+  <addon>
+    <name>Parrot</name>
+    <downloadname>https://www.curseforge.com/wow/addons/parrot/download/457124</downloadname>
+	<tooltip>A scrolling combat text.</tooltip>
+  </addon>
+  <addon>
+    <name>TradeSkillInfo</name>
+    <downloadname>https://www.curseforge.com/wow/addons/tradeskill-info/download/449625</downloadname>
+	<tooltip>gives you all the information that you need about tradeskills - including the ones that your character cannot craft.</tooltip>
+  </addon>
+  <addon>
+    <name>Handy Notes</name>
+    <downloadname>https://www.curseforge.com/wow/addons/handynotes/download/409743</downloadname>
+	<tooltip>Handy Notes for your maps. This addon is intended to be a small and simple replacement for Cartographer_Notes and functions in a similar manner.</tooltip>
+  </addon>
+  <addon>
+    <name>SmartBuff</name>
+    <downloadname>https://www.curseforge.com/wow/addons/smart-buff/download/445978</downloadname>
+	<tooltip>A buff addon, to cast buffs with ease and quickly.</tooltip>
+  </addon>
+  <addon>
+    <name>QuickMark</name>
+    <downloadname>https://www.curseforge.com/wow/addons/quick-mark/download/441373</downloadname>
+	<tooltip>allows you to set the raid target icon of units quickly rather than having to go through the right-click menu or create keybindings.</tooltip>
+  </addon>
+  <addon>
+    <name>PitBul Unit Frames</name>
+    <downloadname>https://www.curseforge.com/wow/addons/pitbull-unit-frames-4-0/download/458097</downloadname>
+	<tooltip>This module will show you how much threat you have (or anybody else has) relative to the (second) highest person on your targets (or any mobs) threat list.</tooltip>
+  </addon>
+  <addon>
+    <name>Collectinator</name>
+    <downloadname>https://www.curseforge.com/wow/addons/collectinator/download/457067</downloadname>
+	<tooltip>Provides methods for determining which mini-pets and mounts you are missing.</tooltip>
+  </addon>
+  <addon>
+    <name>DressMe</name>
+    <downloadname>https://github.com/GetLocalPlayer/DressMe/releases/download/1.3.1/DressMe.1.3.1.7z</downloadname>
+	<tooltip>A transmog addon for WotLK client.</tooltip>
+  </addon>
+  <addon>
+    <name>Bayi's Extended QuestLog</name>
+    <downloadname>https://www.curseforge.com/wow/addons/bayis-extended-questlog/download/440061</downloadname>
+	<tooltip>What this mod does is increases the amount of quests you can see in your log without scrolling to a maximum of 20 items.</tooltip>
+  </addon>
+  <addon>
+    <name>Jamba</name>
+    <downloadname>https://legacy-wow/uploads/addons/wotlk/Jamba-release-3.3.5.zip</downloadname>
+	<tooltip>An addon for multi-boxers.</tooltip>
+  </addon>
+  <addon>
+    <name>Addon Loader</name>
+    <downloadname>https://www.curseforge.com/wow/addons/addon-loader/download/434945</downloadname>
+	<tooltip>An addon that loads other addons automatically, as and when they are needed, which speeds up the logon process.</tooltip>
+  </addon>
+  <addon>
+    <name>Baggins</name>
+    <downloadname>https://www.curseforge.com/wow/addons/baggins/download/568146</downloadname>
+	<tooltip>Inventory Management with virtual bags divided into sections.</tooltip>
+  </addon>
+  <addon>
+    <name>Armory</name>
+    <downloadname>https://www.curseforge.com/wow/addons/armory/download/449128</downloadname>
+	<tooltip>All armory information as (once) seen on the official site from Blizzard Entertainment, in game, for all your characters, on all realms.</tooltip>
+  </addon>
+  <addon>
+    <name>CCReport</name>
+    <downloadname>https://www.curseforge.com/wow/addons/ccreport/download/431112</downloadname>
+	<tooltip>A small simple and compact addon that prints a message in party chat letting your party know you've been CC'd and in what way.</tooltip>
+  </addon>
+  <addon>
+    <name>Diablo Mod</name>
+    <downloadname>https://legacy-wow.com/uploads/addons/wotlk/DiabloMod.zip</downloadname>
+	<tooltip>Addon that makes your UI look like Diablo 2</tooltip>
+  </addon>
+  <addon>
+    <name>Elkanos Buff Bars</name>
+    <downloadname>https://www.curseforge.com/wow/addons/elkbuffbars/download/439018</downloadname>
+	<tooltip>Provides groups of statusbar style indicators to show (de)buffs currently affecting your char or some other units (currently focus, pet and target).</tooltip>
+  </addon>
+  <addon>
+    <name>TBag</name>
+    <downloadname>https://www.curseforge.com/wow/addons/tbag-shefki/download/457009</downloadname>
+	<tooltip>Provides an alternative bag and bank interface. It was built by modifying Engbags an addon who has essnetially the same functionality is missing some of the features of TBag.</tooltip>
+  </addon>
+  <addon>
+    <name>XpHud</name>
+    <downloadname>https://legacy-wow/uploads/addons/wotlk/XpHud.zip</downloadname>
+	<tooltip>Addon that shows your experience.</tooltip>
+  </addon>
+  <addon>
+    <name>ChatMOD</name>
+    <downloadname>https://www.curseforge.com/wow/addons/chat-mod/download/436979</downloadname>
+	<tooltip>provides many features which makes chatting / communication InGame much easier.</tooltip>
+  </addon>
+  <addon>
+    <name>Skinner</name>
+    <downloadname>https://www.curseforge.com/wow/addons/skinner/download/450456</downloadname>
+	<tooltip>Skinner has 2 main sub-directories; AddonSkins and SkinMe. The skins for the Blizzard UI are in the 'core' set of files. All the skins for individual Addons are in the AddonSkins directory and the SkinMe directory is empty, apart from a placeholder file.</tooltip>
+  </addon>
+  <addon>
+    <name>Chinchilla Minimap</name>
+    <downloadname>https://www.curseforge.com/wow/addons/chinchilla/download/458017</downloadname>
+	<tooltip>alters the Blizzard Minimap in a way to provide much nicer features and other niceties.</tooltip>
+  </addon>
+  <addon>
+    <name>Black List</name>
+    <downloadname>https://legacy-wow/uploads/addons/wotlk/BlackList-3.3.5.zip</downloadname>
+	<tooltip>An addon that adds a new players list (called "Black") to your Friends Tab on the Social Panel, near Friend List, Ignore List and Mute List.</tooltip>
+  </addon>
+  <addon>
+    <name>Critline</name>
+    <downloadname>https://www.curseforge.com/wow/addons/critline/download/442345</downloadname>
+	<tooltip>An addon that will remember your highest hits and crits (including heals and pet attacks), and display them in a fairly simple tooltip.</tooltip>
+  </addon>
+  <addon>
+    <name>Currency</name>
+    <downloadname>https://www.curseforge.com/wow/addons/currency/download/457938</downloadname>
+	<tooltip>Currency shows you all of your currencies with just a mouse-over.</tooltip>
+  </addon>
+  <addon>
+    <name>SPAMFilter</name>
+    <downloadname>https://legacy-wow/uploads/addons/wotlk/SPAMFilter.zip</downloadname>
+	<tooltip>Filters gold spammers and account sellers out of global, trade, /yell, /emote and /say</tooltip>
+  </addon>
+  <addon>
+    <name>Totem Guru</name>
+    <downloadname>https://www.curseforge.com/wow/addons/totemguru/download/416119</downloadname>
+	<tooltip>TotemGuru is designed to allow you to see all the totems dropped by the shammy’s in a raid.</tooltip>
+  </addon>
+  <addon>
+    <name>KgPanels</name>
+    <downloadname>https://www.curseforge.com/wow/addons/kg-panels/download/465355</downloadname>
+	<tooltip>Create panels for customizing your UI, sucessor to eePanels.</tooltip>
+  </addon>
+  <addon>
+    <name>Linked Chat Text</name>
+    <downloadname>https://github.com/olivernybo/wow-linked-text/releases/download/1.0.0/LinkedText.zip</downloadname>
+	<tooltip>A wow-addon to make links clickable in all chat</tooltip>
+  </addon>
+  <addon>
+    <name>Chatsounds</name>
+    <downloadname>https://www.curseforge.com/wow/addons/chat-sounds/download/450812</downloadname>
+	<tooltip>Can play new sounds for, Whispers, Guild, Officer, Party and Party Leader, Raid and Raid Leader, Battlegrounds and BG Leader, Custom player joined channels and more.</tooltip>
+  </addon>
+  <addon>
+    <name>Simple Raid Target Icons</name>
+    <downloadname>https://www.curseforge.com/wow/addons/simple-raid-target-icons/download/457739</downloadname>
+	<tooltip>Simple Raid Target Icons (SRTI for short) allows the player to quickly mark raid targets by performing modified clicks or pressing keybind.</tooltip>
+  </addon>
+  <addon>
+    <name>SunnArt</name>
+    <downloadname>https://www.curseforge.com/wow/addons/sunn-viewport-art/download/446582</downloadname>
+	<tooltip>allows you to change the size of the rendered world area (viewport) and adds textured artwork in the non-rendered areas.</tooltip>
+  </addon>
+  <addon>
+    <name>BadBoy</name>
+    <downloadname>https://www.curseforge.com/wow/addons/bad-boy/download/457648</downloadname>
+	<tooltip>Spam Blocker and Reporter, A 20 line chat buffer/throttle to prevent people spamming the same message one after another. For more BadBoy addons go to this link</tooltip>
+  </addon>
+  <addon>
+    <name>Volumizer</name>
+    <downloadname>https://www.curseforge.com/wow/addons/volumizer/download/461910</downloadname>
+	<tooltip>Control panel for the various game sound volumes.</tooltip>
+  </addon>
+  <addon>
+    <name>TriviaBot</name>
+    <downloadname>https://www.curseforge.com/wow/addons/trivia-bot/download/480109</downloadname>
+	<tooltip>allows the user to host quiz games for other players.</tooltip>
+  </addon>
+  <addon>
+    <name>Buffet</name>
+    <downloadname>https://www.curseforge.com/wow/addons/buffet/download/398513</downloadname>
+	<tooltip>Buffet is a simple water/food managing addon inspired by BaudConsumables and Munchies addons.</tooltip>
+  </addon>
+  <addon>
+    <name>Guild2Guild</name>
+    <downloadname>https://www.curseforge.com/wow/addons/guild2guild/download/377857</downloadname>
+	<tooltip>Enables full functioning communication between 2 or more guilds.</tooltip>
+  </addon>
+  <addon>
+    <name>GuildGreet Extended</name>
+    <downloadname>https://www.curseforge.com/wow/addons/guild-greet-extended/download/419109</downloadname>
+	<tooltip>An addon that keeps track of main and alt characters in your guild and reminds you to greet them and congratulate them on level up.</tooltip>
+  </addon>
+  <addon>
+    <name>Elitist Group</name>
+    <downloadname>https://www.curseforge.com/wow/addons/elitistgroup/download/445209</downloadname>
+	<tooltip>Elitist Group’s goal is to shift focus away from single scores which don’t tell you anything about the users choice of gear. Instead of a single score, Elitist Group shows you a variety of data from the players experience per dungeons and raid...</tooltip>
+  </addon>
+  <addon>
+    <name>Cellular</name>
+    <downloadname>https://www.curseforge.com/wow/addons/cellular/download/435026</downloadname>
+	<tooltip>An instant messenger mod (for only whispers) based on the functionality of an old version of ForgottenChat.</tooltip>
+  </addon>
+  <addon>
+    <name>Reflux</name>
+    <downloadname>https://www.curseforge.com/wow/addons/reflux/download/424404</downloadname>
+	<tooltip>A small lightweight profile manager. With the coming of dual specs, and people building UI compilations.</tooltip>
+  </addon>
+  <addon>
+    <name>ToolTipTabs</name>
+    <downloadname>https://legacy-wow/uploads/addons/wotlk/ToolTipTabs-3.3.5.zip</downloadname>
+	<tooltip>Allows you to open many different chat links at any one time. Each time you open a new link it is added to the tooltip and receives it's own tab on the left hand side.</tooltip>
+  </addon>
+  <addon>
+    <name>DisplayDungeon</name>
+    <downloadname>https://www.curseforge.com/wow/addons/displaydungeon/download/3062820</downloadname>
+	<tooltip>This simple AddOn shows small icons under a minimap which shows current RDF queue status.</tooltip>
+  </addon>
+  <addon>
+    <name>CleverPet</name>
+    <downloadname>https://www.curseforge.com/wow/addons/cleverpet/download/3062823</downloadname>
+	<tooltip>This simple AddOn shows a big text on the screen informing that your pet/minion has lost his target.</tooltip>
+  </addon>
+  <addon>
+    <name>BigWigs Bossmods</name>
+    <downloadname>https://www.curseforge.com/wow/addons/big-wigs/download/458195</downloadname>
+	<tooltip>BigWigs is a boss encounter add-on. It consists of many individual encounter scripts, or boss modules; mini add-ons that are designed to trigger alert messages, timer bars, sounds, and so forth, for one specific raid encounter.</tooltip>
+  </addon>
+  <addon>
+    <name>LittleWigs</name>
+    <downloadname>https://www.curseforge.com/wow/addons/little-wigs/download/434326</downloadname>
+	<tooltip>A collection of BigWigs modules for bosses found in 5-man dungeons and scenarios.</tooltip>
+  </addon>
+  <addon>
+    <name>TellMeWhen</name>
+    <downloadname>https://www.curseforge.com/wow/addons/tellmewhen/download/448968</downloadname>
+	<tooltip>TellMeWhen is a WoW addon that provides visual, auditory, and textual notifications about cooldowns, buffs, and pretty much every other element of combat.</tooltip>
+  </addon>
+  <addon>
+    <name>BugSack</name>
+    <downloadname>https://www.curseforge.com/wow/addons/bugsack/download/437907</downloadname>
+	<tooltip>BugSack eases the process of viewing bugs. It displays Lua errors that occurred during your play session, including the full debug stack. It aims to be invaluable to developers, and a useful tool for players.</tooltip>
+  </addon>
+  <addon>
+    <name>idTip</name>
+    <downloadname>https://www.curseforge.com/wow/addons/idtip/download/436536</downloadname>
+	<tooltip>Adds IDs to the ingame tooltips.</tooltip>
+  </addon>
+  <addon>
+    <name>Ace3</name>
+    <downloadname>https://www.curseforge.com/wow/addons/ace3/download/457195</downloadname>
+	<tooltip>AddOn development framework.</tooltip>
+  </addon>
+  <addon>
+    <name>Poisoner</name>
+    <downloadname>https://www.curseforge.com/wow/addons/poisoner/download/455031</downloadname>
+	<tooltip>Poison application helper for rogues.</tooltip>
+  </addon>
+  <addon>
+    <name>InFlight Taxi Timer</name>
+    <downloadname>https://www.curseforge.com/wow/addons/inflight-taxi-timer/download/434842</downloadname>
+	<tooltip>InFlight is a simple taxi flight timer mod that lets you know how long it will take to get to your destination. Other mods may provide a similar feature, however, InFlight is a lightweight alternative that, in most cases, is leaner, faster and uses a lot less memory (which is the main motivation behind InFlight).</tooltip>
+  </addon>
+  <addon>
+    <name>XToLevel</name>
+    <downloadname>https://www.curseforge.com/wow/addons/xto-level/download/456188</downloadname>
+	<tooltip>A simple AddOn that provides details about your leveling progress, tracking a variety of items required until you reach your next level.</tooltip>
+  </addon>
+  <addon>
+    <name>Misspelled</name>
+    <downloadname>https://www.curseforge.com/wow/addons/misspelled/download/455308</downloadname>
+	<tooltip>Misspelled is a chat spell-checker addon. Misspelled watches the chat messages you type, highlighting any misspellings and offering suggestions for any misspelled words it finds.</tooltip>
+  </addon>
+  <addon>
+    <name>Ace2</name>
+    <downloadname>https://www.curseforge.com/wow/addons/ace2/download/434893</downloadname>
+	<tooltip>AddOn development framework</tooltip>
+  </addon>
+  <addon>
+    <name>AceGUI-3.0-SharedMediaWidgets</name>
+    <downloadname>https://www.curseforge.com/wow/addons/ace-gui-3-0-shared-media-widgets/download/441257</downloadname>
+	<tooltip>This addon provides 5 AceGUI-3.0 widgets that will make selection LibSharedMedia-3.0 types easier.</tooltip>
+  </addon>
+</addonlist>
