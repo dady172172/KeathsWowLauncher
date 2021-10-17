@@ -80,6 +80,8 @@ Partial Class Form1
         Me.listboxInstalledAddons = New System.Windows.Forms.ListBox()
         Me.btnDelAddon = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.txtAddonInstallSearch = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.pnlNav.SuspendLayout()
         Me.pnlLogoInfo.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -676,6 +678,8 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.txtAddonInstallSearch)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.btnInstallAddon)
         Me.GroupBox1.Controls.Add(Me.lbInstallAddons)
@@ -683,9 +687,9 @@ Partial Class Form1
         Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GroupBox1.Font = New System.Drawing.Font("Nirmala UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(426, 0)
+        Me.GroupBox1.Location = New System.Drawing.Point(376, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(320, 496)
+        Me.GroupBox1.Size = New System.Drawing.Size(370, 496)
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "To download and install"
@@ -697,7 +701,7 @@ Partial Class Form1
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(214, 461)
+        Me.Button1.Location = New System.Drawing.Point(264, 461)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 28)
         Me.Button1.TabIndex = 18
@@ -725,15 +729,14 @@ Partial Class Form1
         '
         Me.lbInstallAddons.BackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.lbInstallAddons.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lbInstallAddons.Dock = System.Windows.Forms.DockStyle.Top
         Me.lbInstallAddons.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
         Me.lbInstallAddons.ForeColor = System.Drawing.SystemColors.ScrollBar
         Me.lbInstallAddons.FormattingEnabled = True
         Me.lbInstallAddons.ItemHeight = 24
         Me.lbInstallAddons.Items.AddRange(New Object() {"Work in progress"})
-        Me.lbInstallAddons.Location = New System.Drawing.Point(3, 23)
+        Me.lbInstallAddons.Location = New System.Drawing.Point(3, 47)
         Me.lbInstallAddons.Name = "lbInstallAddons"
-        Me.lbInstallAddons.Size = New System.Drawing.Size(314, 432)
+        Me.lbInstallAddons.Size = New System.Drawing.Size(364, 408)
         Me.lbInstallAddons.Sorted = True
         Me.lbInstallAddons.TabIndex = 10
         '
@@ -748,7 +751,7 @@ Partial Class Form1
         Me.gbCurInstalled.ForeColor = System.Drawing.Color.White
         Me.gbCurInstalled.Location = New System.Drawing.Point(0, 0)
         Me.gbCurInstalled.Name = "gbCurInstalled"
-        Me.gbCurInstalled.Size = New System.Drawing.Size(320, 496)
+        Me.gbCurInstalled.Size = New System.Drawing.Size(370, 496)
         Me.gbCurInstalled.TabIndex = 14
         Me.gbCurInstalled.TabStop = False
         Me.gbCurInstalled.Text = "Currently Installed"
@@ -760,7 +763,7 @@ Partial Class Form1
         Me.btnBackupAddons.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBackupAddons.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.btnBackupAddons.ForeColor = System.Drawing.Color.White
-        Me.btnBackupAddons.Location = New System.Drawing.Point(214, 461)
+        Me.btnBackupAddons.Location = New System.Drawing.Point(264, 461)
         Me.btnBackupAddons.Name = "btnBackupAddons"
         Me.btnBackupAddons.Size = New System.Drawing.Size(100, 28)
         Me.btnBackupAddons.TabIndex = 16
@@ -773,7 +776,6 @@ Partial Class Form1
         '
         Me.listboxInstalledAddons.BackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.listboxInstalledAddons.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.listboxInstalledAddons.Dock = System.Windows.Forms.DockStyle.Top
         Me.listboxInstalledAddons.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
         Me.listboxInstalledAddons.ForeColor = System.Drawing.SystemColors.ScrollBar
         Me.listboxInstalledAddons.FormattingEnabled = True
@@ -781,7 +783,7 @@ Partial Class Form1
         Me.listboxInstalledAddons.Location = New System.Drawing.Point(3, 23)
         Me.listboxInstalledAddons.Name = "listboxInstalledAddons"
         Me.listboxInstalledAddons.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
-        Me.listboxInstalledAddons.Size = New System.Drawing.Size(314, 432)
+        Me.listboxInstalledAddons.Size = New System.Drawing.Size(364, 432)
         Me.listboxInstalledAddons.Sorted = True
         Me.listboxInstalledAddons.TabIndex = 10
         '
@@ -804,6 +806,29 @@ Partial Class Form1
         '
         Me.ToolTip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.ToolTip1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(249, Byte), Integer))
+        '
+        'txtAddonInstallSearch
+        '
+        Me.txtAddonInstallSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.txtAddonInstallSearch.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtAddonInstallSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
+        Me.txtAddonInstallSearch.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.txtAddonInstallSearch.Location = New System.Drawing.Point(83, 19)
+        Me.txtAddonInstallSearch.Name = "txtAddonInstallSearch"
+        Me.txtAddonInstallSearch.Size = New System.Drawing.Size(234, 22)
+        Me.txtAddonInstallSearch.TabIndex = 19
+        Me.txtAddonInstallSearch.Text = "Search..."
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(1, 19)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(76, 25)
+        Me.Label7.TabIndex = 20
+        Me.Label7.Text = "Search:"
         '
         'Form1
         '
@@ -844,6 +869,7 @@ Partial Class Form1
         Me.pnlAddons.ResumeLayout(False)
         Me.Panel11.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.gbCurInstalled.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -905,4 +931,6 @@ Partial Class Form1
     Friend WithEvents btnInstallAddon As Button
     Friend WithEvents btnBackupAddons As Button
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents txtAddonInstallSearch As TextBox
+    Friend WithEvents Label7 As Label
 End Class

@@ -2,9 +2,7 @@
 Imports System.Net
 Imports System.Xml
 Public Class Loadup
-
-
-    Shared Sub Addons(ByVal AddonListDownloadLink As String)
+    Shared Sub Addons_Current_list(ByVal AddonListDownloadLink As String)
         If Not Directory.Exists(Form1.txtWowDir.Text & "\Interface\AddOns") Then
             Form1.listboxInstalledAddons.Items.Add("Could not find ""AddOns"" folder")
             Exit Sub
@@ -15,32 +13,46 @@ Public Class Loadup
                 Form1.listboxInstalledAddons.Items.Add(Path.GetFileName(item))
             End If
         Next
-
+    End Sub
+    Shared Sub Addons_Installable_list(ByVal AddonListDownloadLink As String)
         '-----------------------------------------------------------------
-        If File.Exists("AddonsList.xml") Then File.Delete("AddonsList.xml")
-        Dim client As New WebClient
-        Try
-            client.DownloadFile(AddonListDownloadLink, "AddonsList.xml")
-        Catch ex As Exception
-            Form1.lbInstallAddons.Items.Clear()
-            Form1.lbInstallAddons.Items.Add("Could not download list of addons!" & vbNewLine & ex.Message)
-            Exit Sub
-        End Try
+        If Not File.Exists("AddonsList.xml") Then
+            Dim client As New WebClient
+            Try
+                client.DownloadFile(AddonListDownloadLink, "AddonsList.xml")
+            Catch ex As Exception
+                Form1.lbInstallAddons.Items.Clear()
+                Form1.lbInstallAddons.Items.Add("Could not download list of addons!" & vbNewLine & ex.Message)
+                Exit Sub
+            End Try
+        End If
         Form1.lbInstallAddons.Items.Clear()
+        Dim tmpArray As New ArrayList()
+        tmpArray.AddRange(Addon_XML_To_Array())
+        Dim tmpname As New ArrayList()
+        For i = 0 To tmpArray.Count - 1
+            If tmpArray(0) IsNot Nothing Then
+                tmpname.Add(tmpArray(i)(0).ToString)
+            End If
+        Next
+        tmpname.ToArray()
+        tmpname.Sort()
+        Form1.lbInstallAddons.Items.AddRange(tmpname.ToArray)
+    End Sub
+
+    Shared Function Addon_XML_To_Array()
+        If Not File.Exists("AddonsList.xml") Then Return Nothing
         Dim tmplist As New ArrayList()
         Dim xmld As New XmlDocument
         xmld.Load("AddonsList.xml")
         Dim xmlnl As XmlNodeList = xmld.GetElementsByTagName("addon")
         For Each xmln As XmlNode In xmlnl
             If xmln.Item("name").InnerText IsNot Nothing Then
-                tmplist.Add(xmln.Item("name").InnerText)
+                tmplist.Add({xmln.Item("name").InnerText, xmln.Item("downloadname").InnerText, xmln.Item("tooltip").InnerText})
             End If
         Next
-        tmplist.Sort()
-        For i = 0 To tmplist.Count - 1
-            Form1.lbInstallAddons.Items.Add(tmplist(i))
-        Next
-    End Sub
+        Return tmplist
+    End Function
 
     Shared Sub Announcement(ByVal AnnouncementsLink As String)
         Dim client As New WebClient

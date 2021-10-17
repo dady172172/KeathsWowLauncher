@@ -1,15 +1,18 @@
 ﻿Imports System.ComponentModel
 Imports System.IO
-Imports System.Web.Script.Serialization
+Imports System.IO.Compression
+Imports System.Net
 Public Class Form1
-    'some variables for thought
-    Dim RealmlistFileName As String = "Realmslist.txt"
-    Dim keathsSave As String = "KeathsSave.txt"
+    'Discord link..
     Dim DiscordLink As String = "https://www.google.com"
+    'Website link..
     Dim WebsiteLink As String = "https://www.google.com"
+    'AnnouncementsLink is the Raw text for announcements
     Shared AnnouncementsLink As String = "https://pastebin.com/raw/R5faAcDw"
-    Shared AddonsXMLListLink As String = "https://pastebin.com/raw/5VbDbgFB"
-
+    'AddonsXMLLIstLink is Downloads the file to the current directory. This file is the is the list of Addons for download.
+    Shared AddonsXMLListLink As String = "https://raw.githubusercontent.com/dady172172/KeathsWowLauncher/master/KeathsWowLauncher/AddonsList.xml"
+    'array of addons
+    Dim addonsArray As New ArrayList()
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'round the corners of the Form
@@ -19,7 +22,9 @@ Public Class Form1
         'load settings
         Settings.Load()
         Loadup.Announcement(AnnouncementsLink)
-        Loadup.Addons(AddonsXMLListLink)
+        Loadup.Addons_Current_list(AddonsXMLListLink)
+        Loadup.Addons_Installable_list(AddonsXMLListLink)
+        addonsArray = Loadup.Addon_XML_To_Array()
     End Sub
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
@@ -175,9 +180,69 @@ Public Class Form1
     End Sub
 
     Private Sub btnAddons_Click(sender As Object, e As EventArgs) Handles btnAddons.Click
-        Loadup.Addons(AddonsXMLListLink)
+        Loadup.Addons_Current_list(AddonsXMLListLink)
+        Loadup.Addons_Installable_list(AddonsXMLListLink)
         Loadup.Panel(pnlAddons)
     End Sub
 
+    Private Sub btnInstallAddon_Click(sender As Object, e As EventArgs) Handles btnInstallAddon.Click
+        Dim selname As String = lbInstallAddons.SelectedItem.ToString
+        If selname = Nothing Then Exit Sub
+        If addonsArray(0) Is Nothing Then Exit Sub
+        Dim dlLink As String = Nothing
+        Dim dlName As String = Nothing
+        For i = 0 To addonsArray.Count - 1
+            If addonsArray(i)(0).ToString = selname Then
+                dlLink = addonsArray(i)(1).ToString
+                dlName = addonsArray(i)(0).ToString
+                Exit For
+            End If
+        Next
+        '' temp download.. I plan on adding multiselection and a Form
+        If dlLink Is Nothing Or dlName Is Nothing Then Exit Sub
+        If Directory.Exists("Downloads") Then Directory.Delete("Downloads", True)
+        If Not Directory.Exists("Downloads") Then Directory.CreateDirectory("Downloads")
+        Dim dl As New WebClient
+        Try
+            Dim bites = dl.DownloadData(New Uri(dlLink))
+            File.WriteAllBytes("Downloads\" & dlName & ".zip", bites)
+        Catch ex As Exception
+            MessageBox.Show("Could not download the file!" & vbNewLine & ex.Message)
+            Exit Sub
+        End Try
+        Try
+            ZipFile.ExtractToDirectory("Downloads\" & dlName & ".zip", txtWowDir.Text & "\Interface\AddOns")
+        Catch ex As Exception
+            MessageBox.Show("You may already have this addon installed." & vbNewLine & ex.Message)
+            Directory.Delete("Downloads", True)
+            Exit Sub
+        End Try
+        Directory.Delete("Downloads", True)
+        MessageBox.Show("AddonName: " & dlName & vbNewLine & "Done downloading and extracting zip. Reloading current addons list.")
+        Loadup.Addons_Current_list(AddonsXMLListLink)
+    End Sub
 
+    Private Sub txtAddonInstallSearch_TextChanged(sender As Object, e As EventArgs) Handles txtAddonInstallSearch.TextChanged
+        Dim txt As String = txtAddonInstallSearch.Text.ToLower
+        Dim tmplist As New ArrayList()
+        If txt = Nothing Then
+            lbInstallAddons.Items.Clear()
+            For i = 0 To addonsArray.Count - 1
+                tmplist.Add(addonsArray(i)(0))
+            Next
+            tmplist.Sort()
+            lbInstallAddons.Items.AddRange(tmplist.ToArray)
+            Exit Sub
+        End If
+        For i = 0 To addonsArray.Count - 1
+            If addonsArray(i)(0).ToString.ToLower.Contains(txt) Then
+                tmplist.Add(addonsArray(i)(0))
+            End If
+        Next
+        If tmplist IsNot Nothing Then
+            lbInstallAddons.Items.Clear()
+            lbInstallAddons.Items.AddRange(tmplist.ToArray)
+        End If
+
+    End Sub
 End Class
