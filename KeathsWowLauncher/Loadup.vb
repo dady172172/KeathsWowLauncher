@@ -2,6 +2,7 @@
 Imports System.Net
 Imports System.Xml
 Public Class Loadup
+    'Loads addons folder name to listbox
     Shared Sub Addons_Current_list(ByVal AddonListDownloadLink As String)
         If Not Directory.Exists(Form1.txtWowDir.Text & "\Interface\AddOns") Then
             Form1.listboxInstalledAddons.Items.Add("Could not find ""AddOns"" folder")
@@ -14,8 +15,8 @@ Public Class Loadup
             End If
         Next
     End Sub
+    'loads xml addons(that can be installed) in to listbox
     Shared Sub Addons_Installable_list(ByVal AddonListDownloadLink As String)
-        '-----------------------------------------------------------------
         If Not File.Exists("AddonsList.xml") Then
             Dim client As New WebClient
             Try
@@ -39,7 +40,7 @@ Public Class Loadup
         tmpname.Sort()
         Form1.lbInstallAddons.Items.AddRange(tmpname.ToArray)
     End Sub
-
+    'gets data from addons xml and returns an array
     Shared Function Addon_XML_To_Array()
         If Not File.Exists("AddonsList.xml") Then Return Nothing
         Dim tmplist As New ArrayList()
@@ -53,7 +54,7 @@ Public Class Loadup
         Next
         Return tmplist
     End Function
-
+    'Loads announcements
     Shared Sub Announcement(ByVal AnnouncementsLink As String)
         Dim client As New WebClient
         Dim tmptxt As String
@@ -65,7 +66,7 @@ Public Class Loadup
         End Try
         Form1.txtUpdateInfo.Text = tmptxt
     End Sub
-
+    'shows/hides selected panel
     Shared Sub Panel(ByVal Pnl As Panel)
         'Hide all the panels
         Form1.pnlSettings.Hide()

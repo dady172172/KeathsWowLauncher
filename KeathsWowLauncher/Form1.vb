@@ -21,9 +21,11 @@ Public Class Form1
         Loadup.Panel(pnlDashboard)
         'load settings
         Settings.Load()
+        'load announcements and addons
         Loadup.Announcement(AnnouncementsLink)
         Loadup.Addons_Current_list(AddonsXMLListLink)
         Loadup.Addons_Installable_list(AddonsXMLListLink)
+        'set addonsArray so we can use it for addon infomation
         addonsArray = Loadup.Addon_XML_To_Array()
     End Sub
 
@@ -38,6 +40,7 @@ Public Class Form1
     End Sub
 
     Private Sub btnDelConfig_Click(sender As Object, e As EventArgs) Handles btnDelConfig.Click
+        'if config exist delete it
         If File.Exists(txtWowDir.Text & "\WTF\Config.wtf") Then
             File.Delete(txtWowDir.Text & "\WTF\Config.wtf")
         Else
@@ -71,7 +74,7 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        'write save file when the form is closing
+        'save settings
         Settings.Save()
     End Sub
 
@@ -156,41 +159,51 @@ Public Class Form1
         End If
     End Sub
 
-    'Draggable panel
+    'Draggable panel variables
     Dim draggable As Boolean
     Dim mouseX As Integer
     Dim mouseY As Integer
     Private Sub pnlTop_MouseDown(sender As Object, e As MouseEventArgs) Handles pnlTop.MouseDown
+        'draggable panel
         draggable = True
         mouseX = Cursor.Position.X - Me.Left
         mouseY = Cursor.Position.Y - Me.Top
     End Sub
     Private Sub pnlTop_MouseMove(sender As Object, e As MouseEventArgs) Handles pnlTop.MouseMove
+        'draggable panel
         If draggable Then
             Me.Top = Cursor.Position.Y - mouseY
             Me.Left = Cursor.Position.X - mouseX
         End If
     End Sub
     Private Sub pnlTop_MouseUp(sender As Object, e As MouseEventArgs) Handles pnlTop.MouseUp
+        'draggable panel
         draggable = False
     End Sub
 
     Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
+        'minimize window
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
     Private Sub btnAddons_Click(sender As Object, e As EventArgs) Handles btnAddons.Click
+        'show addons panel
         Loadup.Addons_Current_list(AddonsXMLListLink)
         Loadup.Addons_Installable_list(AddonsXMLListLink)
         Loadup.Panel(pnlAddons)
     End Sub
 
     Private Sub btnInstallAddon_Click(sender As Object, e As EventArgs) Handles btnInstallAddon.Click
+        'set variable of selected item in lisbox(install addon)
         Dim selname As String = lbInstallAddons.SelectedItem.ToString
+        'check if a item is selected
         If selname = Nothing Then Exit Sub
+        'check if addonsArray(xml addons info) has data 
         If addonsArray(0) Is Nothing Then Exit Sub
+        'varibles
         Dim dlLink As String = Nothing
         Dim dlName As String = Nothing
+        'loop through addonsArray(xml addons info) and get download link 
         For i = 0 To addonsArray.Count - 1
             If addonsArray(i)(0).ToString = selname Then
                 dlLink = addonsArray(i)(1).ToString
@@ -210,6 +223,7 @@ Public Class Form1
             MessageBox.Show("Could not download the file!" & vbNewLine & ex.Message)
             Exit Sub
         End Try
+        'unzip into addons directory
         Try
             ZipFile.ExtractToDirectory("Downloads\" & dlName & ".zip", txtWowDir.Text & "\Interface\AddOns")
         Catch ex As Exception
@@ -217,14 +231,19 @@ Public Class Form1
             Directory.Delete("Downloads", True)
             Exit Sub
         End Try
+        'make sure to clean up temp folder
         Directory.Delete("Downloads", True)
+        'tell user finished download/unzip
         MessageBox.Show("AddonName: " & dlName & vbNewLine & "Done downloading and extracting zip. Reloading current addons list.")
+        'reload current addons list so it shows the new addon in the listbox
         Loadup.Addons_Current_list(AddonsXMLListLink)
     End Sub
 
     Private Sub txtAddonInstallSearch_TextChanged(sender As Object, e As EventArgs) Handles txtAddonInstallSearch.TextChanged
+        'varibles
         Dim txt As String = txtAddonInstallSearch.Text.ToLower
         Dim tmplist As New ArrayList()
+        'build tmplist to hold names of adddons
         If txt = Nothing Then
             lbInstallAddons.Items.Clear()
             For i = 0 To addonsArray.Count - 1
@@ -234,11 +253,13 @@ Public Class Form1
             lbInstallAddons.Items.AddRange(tmplist.ToArray)
             Exit Sub
         End If
+        'check if addon name contains text from searchbox
         For i = 0 To addonsArray.Count - 1
             If addonsArray(i)(0).ToString.ToLower.Contains(txt) Then
                 tmplist.Add(addonsArray(i)(0))
             End If
         Next
+        'repopulate listbox with matched addon names
         If tmplist IsNot Nothing Then
             lbInstallAddons.Items.Clear()
             lbInstallAddons.Items.AddRange(tmplist.ToArray)

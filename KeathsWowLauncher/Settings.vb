@@ -1,6 +1,5 @@
-﻿Imports KeathsWowLauncher.Form1
-Public Class Settings
-
+﻿Public Class Settings
+    'load settings
     Shared Sub Load()
         If My.Settings.wowdir IsNot "" Then Form1.txtWowDir.Text = My.Settings.wowdir
         If My.Settings.realmslistselected IsNot "" Then Form1.txtRealmslistDashboard.Text = My.Settings.realmslistselected
@@ -15,6 +14,7 @@ Public Class Settings
         End If
         If Form1.txtRealmslistDashboard.Text IsNot "" And Form1.txtRealmslistDashboard.Items.Contains(Form1.txtRealmslistDashboard.Text) Then Form1.txtRealmslistDashboard.SelectedItem = Form1.txtRealmslistDashboard.Text
     End Sub
+    'save settings
     Shared Sub Save()
         If Not Form1.txtWowDir.Text = "" Then My.Settings.wowdir = Form1.txtWowDir.Text
         If Not Form1.txtRealmslistDashboard.SelectedItem = "" Then My.Settings.realmslistselected = Form1.txtRealmslistDashboard.SelectedItem
@@ -40,7 +40,7 @@ Public Class Settings
         My.Settings.Save()
 
     End Sub
-
+    'creates rounded corners on form
     Shared Sub roundCorners(obj As Form)
         Dim DGP As New Drawing2D.GraphicsPath
         DGP.StartFigure()

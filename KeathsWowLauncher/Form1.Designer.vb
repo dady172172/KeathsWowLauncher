@@ -72,6 +72,8 @@ Partial Class Form1
         Me.pnlAddons = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtAddonInstallSearch = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnInstallAddon = New System.Windows.Forms.Button()
         Me.lbInstallAddons = New System.Windows.Forms.ListBox()
@@ -80,8 +82,6 @@ Partial Class Form1
         Me.listboxInstalledAddons = New System.Windows.Forms.ListBox()
         Me.btnDelAddon = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.txtAddonInstallSearch = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.pnlNav.SuspendLayout()
         Me.pnlLogoInfo.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -626,8 +626,8 @@ Partial Class Form1
         '
         Me.pnlBody.Controls.Add(Me.pnlTop)
         Me.pnlBody.Controls.Add(Me.pnlAddons)
-        Me.pnlBody.Controls.Add(Me.pnlDashboard)
         Me.pnlBody.Controls.Add(Me.pnlSettings)
+        Me.pnlBody.Controls.Add(Me.pnlDashboard)
         Me.pnlBody.Dock = System.Windows.Forms.DockStyle.Right
         Me.pnlBody.Location = New System.Drawing.Point(186, 0)
         Me.pnlBody.Name = "pnlBody"
@@ -693,6 +693,29 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "To download and install"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(1, 19)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(76, 25)
+        Me.Label7.TabIndex = 20
+        Me.Label7.Text = "Search:"
+        '
+        'txtAddonInstallSearch
+        '
+        Me.txtAddonInstallSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.txtAddonInstallSearch.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtAddonInstallSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
+        Me.txtAddonInstallSearch.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.txtAddonInstallSearch.Location = New System.Drawing.Point(83, 19)
+        Me.txtAddonInstallSearch.Name = "txtAddonInstallSearch"
+        Me.txtAddonInstallSearch.Size = New System.Drawing.Size(234, 22)
+        Me.txtAddonInstallSearch.TabIndex = 19
+        Me.txtAddonInstallSearch.Text = "Search..."
         '
         'Button1
         '
@@ -806,29 +829,6 @@ Partial Class Form1
         '
         Me.ToolTip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.ToolTip1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(249, Byte), Integer))
-        '
-        'txtAddonInstallSearch
-        '
-        Me.txtAddonInstallSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.txtAddonInstallSearch.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtAddonInstallSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.txtAddonInstallSearch.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.txtAddonInstallSearch.Location = New System.Drawing.Point(83, 19)
-        Me.txtAddonInstallSearch.Name = "txtAddonInstallSearch"
-        Me.txtAddonInstallSearch.Size = New System.Drawing.Size(234, 22)
-        Me.txtAddonInstallSearch.TabIndex = 19
-        Me.txtAddonInstallSearch.Text = "Search..."
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(1, 19)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(76, 25)
-        Me.Label7.TabIndex = 20
-        Me.Label7.Text = "Search:"
         '
         'Form1
         '
