@@ -23,7 +23,7 @@
         If Form1.cbMaxscreen.Checked Then My.Settings.cbMaxscreen = True Else My.Settings.cbMaxscreen = False
         If Form1.cbNosound.Checked Then My.Settings.cbNosound = True Else My.Settings.cbNosound = False
         If Form1.cbWindowed.Checked Then My.Settings.cbWindowed = True Else My.Settings.cbWindowed = False
-        Dim tmpstring As String
+        Dim tmpstring As String = ""
         If Form1.txtRealmslistDashboard.Items.Count > 0 Then
             For i = 0 To Form1.txtRealmslistDashboard.Items.Count - 1
                 Select Case i
@@ -41,7 +41,7 @@
 
     End Sub
     'creates rounded corners on form
-    Shared Sub roundCorners(obj As Form)
+    Shared Sub RoundCorners(obj As Form)
         Dim DGP As New Drawing2D.GraphicsPath
         DGP.StartFigure()
         'top left corner

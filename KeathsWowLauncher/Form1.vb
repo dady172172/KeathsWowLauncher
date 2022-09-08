@@ -3,20 +3,24 @@ Imports System.IO
 Imports System.IO.Compression
 Imports System.Net
 Public Class Form1
+    'Server name here
+    ReadOnly ServerName As String = "Keaths Wow Launcher"
+    'Version Number here
+    ReadOnly VersionNumber As String = "1.0.0"
     'Discord link..
-    Dim DiscordLink As String = "https://www.google.com"
+    ReadOnly DiscordLink As String = "https://www.google.com"
     'Website link..
-    Dim WebsiteLink As String = "https://www.google.com"
+    ReadOnly WebsiteLink As String = "https://www.google.com"
     'AnnouncementsLink is the Raw text for announcements
-    Shared AnnouncementsLink As String = "https://pastebin.com/raw/R5faAcDw"
+    ReadOnly AnnouncementsLink As String = "https://pastebin.com/raw/R5faAcDw"
     'AddonsXMLLIstLink is Downloads the file to the current directory. This file is the is the list of Addons for download.
-    Shared AddonsXMLListLink As String = "https://raw.githubusercontent.com/dady172172/KeathsWowLauncher/master/KeathsWowLauncher/AddonsList.xml"
+    ReadOnly AddonsXMLListLink As String = "https://raw.githubusercontent.com/dady172172/KeathsWowLauncher/master/KeathsWowLauncher/AddonsList.xml"
     'array of addons
     Dim addonsArray As New ArrayList()
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'round the corners of the Form
-        Settings.roundCorners(Me)
+        Settings.RoundCorners(Me)
         'shows dashboard panel
         Loadup.Panel(pnlDashboard)
         'load settings
@@ -27,19 +31,23 @@ Public Class Form1
         Loadup.Addons_Installable_list(AddonsXMLListLink)
         'set addonsArray so we can use it for addon infomation
         addonsArray = Loadup.Addon_XML_To_Array()
+        'set the name of the launcher
+        Label1.Text = ServerName
+        'set the version number
+        Label2.Text = VersionNumber
     End Sub
 
-    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+    Private Sub BtnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         'closes the program
         Me.Close()
     End Sub
 
-    Private Sub btnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
+    Private Sub BtnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
         'again does what it says
         Loadup.Panel(pnlDashboard)
     End Sub
 
-    Private Sub btnDelConfig_Click(sender As Object, e As EventArgs) Handles btnDelConfig.Click
+    Private Sub BtnDelConfig_Click(sender As Object, e As EventArgs) Handles btnDelConfig.Click
         'if config exist delete it
         If File.Exists(txtWowDir.Text & "\WTF\Config.wtf") Then
             File.Delete(txtWowDir.Text & "\WTF\Config.wtf")
@@ -48,7 +56,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
+    Private Sub BtnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
         'does what it says
         Loadup.Panel(pnlSettings)
     End Sub
@@ -62,7 +70,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub btnDeleteRealmslist_Click(sender As Object, e As EventArgs) Handles btnDeleteRealmslist.Click
+    Private Sub BtnDeleteRealmslist_Click(sender As Object, e As EventArgs) Handles btnDeleteRealmslist.Click
         'variables
         Dim rldt As String = txtRealmslistDashboard.Text
         'check if dropdown cantains selected text then delete it
@@ -78,28 +86,29 @@ Public Class Form1
         Settings.Save()
     End Sub
 
-    Private Sub btnSearchDir_click(sender As Object, e As EventArgs) Handles btnSearchDir.Click
+    Private Sub BtnSearchDir_click(sender As Object, e As EventArgs) Handles btnSearchDir.Click
         'Create folder browser dialog
-        Dim fbd As New FolderBrowserDialog
         'Set discription for FolderBrowserDialog
-        fbd.Description = "Please Select you Wow folder where your Wow.exe is."
+        Dim fbd As New FolderBrowserDialog With {
+            .Description = "Please Select you Wow folder where your Wow.exe is."
+        }
         'Check result(that user selected a path) and set the Textbox text to the users selection
         If fbd.ShowDialog() = DialogResult.OK Then
             txtWowDir.Text = fbd.SelectedPath()
         End If
     End Sub
 
-    Private Sub btnDiscord_Click(sender As Object, e As EventArgs) Handles btnDiscord.Click
+    Private Sub BtnDiscord_Click(sender As Object, e As EventArgs) Handles btnDiscord.Click
         'Opens discord link in browser
         Process.Start(DiscordLink)
     End Sub
 
-    Private Sub btnWebsite_Click(sender As Object, e As EventArgs) Handles btnWebsite.Click
+    Private Sub BtnWebsite_Click(sender As Object, e As EventArgs) Handles btnWebsite.Click
         'Opens website link in browser
         Process.Start(WebsiteLink)
     End Sub
 
-    Private Sub btnPlay_Click(sender As Object, e As EventArgs) Handles btnPlay.Click
+    Private Sub BtnPlay_Click(sender As Object, e As EventArgs) Handles btnPlay.Click
         'checks
         If txtRealmslistDashboard.SelectedItem = "" Then
             MessageBox.Show("Please select a realm!")
@@ -127,7 +136,7 @@ Public Class Form1
         If cbMaxscreen.Checked Then tmp.Add("-fullscreen")
         If cbNosound.Checked Then tmp.Add("-nosound")
         If cbWindowed.Checked Then tmp.Add("-windowed")
-        Dim args As String
+        Dim args As String = ""
         For Each item In tmp
             If args = "" Then
                 args = item & " "
@@ -139,7 +148,7 @@ Public Class Form1
         Process.Start(txtWowDir.Text & "\Wow.exe", args)
     End Sub
 
-    Private Sub btnDelCache_Click(sender As Object, e As EventArgs) Handles btnDelCache.Click
+    Private Sub BtnDelCache_Click(sender As Object, e As EventArgs) Handles btnDelCache.Click
         'check if directory exists then delete cache folder
         If Directory.Exists(txtWowDir.Text & "\Cache") Then
             Directory.Delete(txtWowDir.Text & "\Cache", True)
@@ -148,7 +157,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub btnResetConfig_Click(sender As Object, e As EventArgs) Handles btnResetConfig.Click
+    Private Sub BtnResetConfig_Click(sender As Object, e As EventArgs) Handles btnResetConfig.Click
         'check if config exists then delete and create/write all lines to config
         If File.Exists(txtWowDir.Text & "\WTF\Config.wtf") Then
             File.Delete(txtWowDir.Text & "\WTF\Config.wtf")
@@ -163,37 +172,37 @@ Public Class Form1
     Dim draggable As Boolean
     Dim mouseX As Integer
     Dim mouseY As Integer
-    Private Sub pnlTop_MouseDown(sender As Object, e As MouseEventArgs) Handles pnlTop.MouseDown
+    Private Sub PnlTop_MouseDown(sender As Object, e As MouseEventArgs) Handles pnlTop.MouseDown
         'draggable panel
         draggable = True
         mouseX = Cursor.Position.X - Me.Left
         mouseY = Cursor.Position.Y - Me.Top
     End Sub
-    Private Sub pnlTop_MouseMove(sender As Object, e As MouseEventArgs) Handles pnlTop.MouseMove
+    Private Sub PnlTop_MouseMove(sender As Object, e As MouseEventArgs) Handles pnlTop.MouseMove
         'draggable panel
         If draggable Then
             Me.Top = Cursor.Position.Y - mouseY
             Me.Left = Cursor.Position.X - mouseX
         End If
     End Sub
-    Private Sub pnlTop_MouseUp(sender As Object, e As MouseEventArgs) Handles pnlTop.MouseUp
+    Private Sub PnlTop_MouseUp(sender As Object, e As MouseEventArgs) Handles pnlTop.MouseUp
         'draggable panel
         draggable = False
     End Sub
 
-    Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
+    Private Sub BtnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
         'minimize window
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub btnAddons_Click(sender As Object, e As EventArgs) Handles btnAddons.Click
+    Private Sub BtnAddons_Click(sender As Object, e As EventArgs) Handles btnAddons.Click
         'show addons panel
         Loadup.Addons_Current_list(AddonsXMLListLink)
         Loadup.Addons_Installable_list(AddonsXMLListLink)
         Loadup.Panel(pnlAddons)
     End Sub
 
-    Private Sub btnInstallAddon_Click(sender As Object, e As EventArgs) Handles btnInstallAddon.Click
+    Private Sub BtnInstallAddon_Click(sender As Object, e As EventArgs) Handles btnInstallAddon.Click
         'set variable of selected item in lisbox(install addon)
         Dim selname As String = lbInstallAddons.SelectedItem.ToString
         'check if a item is selected
@@ -239,7 +248,7 @@ Public Class Form1
         Loadup.Addons_Current_list(AddonsXMLListLink)
     End Sub
 
-    Private Sub txtAddonInstallSearch_TextChanged(sender As Object, e As EventArgs) Handles txtAddonInstallSearch.TextChanged
+    Private Sub TxtAddonInstallSearch_TextChanged(sender As Object, e As EventArgs) Handles txtAddonInstallSearch.TextChanged
         'varibles
         Dim txt As String = txtAddonInstallSearch.Text.ToLower
         Dim tmplist As New ArrayList()
